@@ -132,7 +132,17 @@ class KNearestNeighbor(object):
         #       and two broadcast sums.                                         #
         #########################################################################
         # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-        
+        # print("self.X_train.shape: ", self.X_train.shape)
+        # print("X.shape: ", X.shape)
+        # print("X_train^T x X: ", (X @ self.X_train.T).shape)
+        # print("X.^2: ", (X**2).shape)
+        # print("sum(X.^2): ", np.sum(X**2, axis = 1).shape)
+        # print("sum(X_train.^2): ", np.sum(self.X_train**2, axis = 1).shape)
+        # print((np.sum(X**2, axis=1).T)[np.newaxis,:].shape)
+        # print("sum(X.^2) + sum(X_train.^2): ", (np.sum(X**2, axis=1)[:,np.newaxis] + np.sum(self.X_train**2, axis=1)).shape)
+               
+        dists = np.sqrt(np.sum(X**2, axis = 1)[:, np.newaxis] + np.sum(self.X_train**2, axis = 1) - 2 * (X @ self.X_train.T))
+        # print("Shape of dists: ", dists.shape)
         pass
 
         # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
