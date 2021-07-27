@@ -1,6 +1,6 @@
 Repo with a bunch of things that I am learning
 
-#### CS231n Assignments
+### CS231n Assignments
 
 Following along with the lectures on Convolutional Neural Networks for Visual Recognition given at Stanford.
 
