@@ -1,6 +1,0 @@
-This IS SOMe KIND of ThiNG
-There are many lines in this file.
-This is the new line at number 3.
-Some of these lines are really long, like this one, which is over 80 characters, and therefore, will get printed.
-On the other hand, this line won't be printed.
-The sole purpose of this line is to test whether I am printing the newline character properly. Do these lines alread contain a newline?
